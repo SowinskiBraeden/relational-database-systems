@@ -1,3 +1,5 @@
+SET search_path TO lab_tracker_group_22;
+
 CREATE OR REPLACE VIEW ta_view AS
 SELECT
     ls.lab_section_id                AS lab_section,

@@ -1,3 +1,5 @@
+SET search_path TO lab_tracker_group_22;
+
 -- Clean DB before inserting
 TRUNCATE TABLE progress_change_log CASCADE;
 TRUNCATE TABLE progress CASCADE;

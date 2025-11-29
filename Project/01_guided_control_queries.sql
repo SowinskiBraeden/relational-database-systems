@@ -1,3 +1,5 @@
+SET search_path TO lab_tracker_group_22;
+
 -- 1.
 SELECT le_section_id, lab_set_code, course_code, la_title, lab_day_of_week
 FROM lab_event

@@ -1,3 +1,4 @@
+SET search_path TO lab_tracker_group_22;
 
 -- Show all students with their section info Should work
 SELECT s.student_first_name, s.student_last_name, ls.lab_course_code, c.course_title, t.term_name
