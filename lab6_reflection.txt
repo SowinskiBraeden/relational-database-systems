@@ -1,0 +1,14 @@
+Almost all the tables and or constraints caused errors, so I had to spend a lot of time, updating the lab5 schema sql file to accomodate the data given for lab 6 as well as update some constraints to ensure all the insertions worked as intended.
+
+Here is an example of some of the error messages given while attemping to delete data in task 4 that is referenced by entities in other tables.
+
+psql:lab6_dml.sql:322: ERROR:  update or delete on table "department" violates foreign key constraint "professor_dep_code_fkey" on table "professor"
+DETAIL:  Key (dep_code)=(COMP) is still referenced from table "professor".
+psql:lab6_dml.sql:325: ERROR:  column "off_sectoin" does not exist
+LINE 2: WHERE off_sectoin = 'L2';
+              ^
+HINT:  Perhaps you meant to reference the column "course_offering.off_section".
+psql:lab6_dml.sql:328: ERROR:  update or delete on table "location" violates foreign key constraint "department_loc_code_fkey" on table "department"
+DETAIL:  Key (loc_code)=(SE12 260) is still referenced from table "department".
+
+Finally, I think the schema is much better not only to fit the data given but being correct and making sense logically on what data should be there, and what their constraints should be to better reflect the real world.

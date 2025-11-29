@@ -1,0 +1,9 @@
+Yes, all of the row counts make sense, there may be some duplicatoin.
+For example, when we are getting all student ids, and their enrollments, there may be duplicate enrollment data.
+i.e. two students are enrolled in the same course_offering. However, we since we are showing the student_id we are able to tell them apart.
+
+I dont think distinct would change the result in the example above, there is student x enrolled in class A, and student y enrolled in class A too. Those are already distinct.
+
+I think for the most part I am selecting the minimul necessary columns, only showing relavent related information.
+
+Unless asked to show all data of a table.
